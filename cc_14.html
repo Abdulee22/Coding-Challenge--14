@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Ticket Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(60, 77, 235);
+        }
+        .support-ticket {
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(19, 71, 55);
+            border-radius: 5px;
+            display: inline-block;
+            width: 300px;
+        }
+        #ticketContainer {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgba(52, 185, 222, 0.462);
+            border-radius: 8px;
+            box-shadow: inset;
+        }
+        header {
+            background-color: rgb(71, 153, 204);
+            padding: 15px;
+            text-align: center;
+            box-shadow: inset;
+        }
+        footer {
+            position: fixed;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(110, 179, 99, 0.649);
+            padding: 10px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Support Ticket Management System</h1>
+    </header>
+
+    <main>
+        <!-- Support Ticket List Area -->
+        <h2>Support Tickets Below</h2>
+        <div id="ticketContainer">
+            <!-- Support tickets will be added here dynamically -->
+        </div>
+
+        <!-- Controls to Add Support Tickets -->
+        <button onclick="addSupportTicket('New Ticket Name:', 'Issue:', 'High','Medium','Low')">Add New Support Ticket</button>
+        <button> save Ticket</button>
+    </main>
+
+    <footer>
+        The Footer
+    </footer>
+
+    <script src="cc_14.js"></script> <!-- Link to your JavaScript file -->
+
+</body>
+</html>
