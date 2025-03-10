@@ -17,4 +17,13 @@ const resolveButton = ticket.querySelector(".resolve-btn"); // Event listener fo
 resolveButton.addEventListener("click", (event) => {
 event.stopPropagation(); // Prevent event bubbling
 ticketContainer.removeChild(ticket); });}// Remove the ticket
+
+// Task 3: Converting NodeLists to Arrays for Bulk Updates //
+function highlightHighPriorityTickets() {
+const tickets = document.querySelectorAll(".priority-level");
+const ticketsArray = Array.from(tickets); // Convert NodeList to an array
     
+ticketsArray.forEach(ticket => {
+if (ticket.innerText.includes("High")) { // Check if ticket has "High" priority
+ticket.closest(".support-ticket").style.border = "2px solid green"; // Highlight with border
+ticket.closest(".support-ticket").style.backgroundColor = "blue"; }});}// Change background color  
