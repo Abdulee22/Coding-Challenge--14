@@ -27,3 +27,10 @@ ticketsArray.forEach(ticket => {
 if (ticket.innerText.includes("High")) { // Check if ticket has "High" priority
 ticket.closest(".support-ticket").style.border = "2px solid green"; // Highlight with border
 ticket.closest(".support-ticket").style.backgroundColor = "blue"; }});}// Change background color  
+
+// Task 4: Implementing Ticket Resolution with Event Bubbling //
+const ticketContainer = document.getElementById("ticketContainer"); // Assuming there's a ticketContainer div
+
+ticketContainer.addEventListener("click", (event) => {
+if (event.target.classList.contains("support-ticket")) {
+console.log("Ticket clicked:", event.target.querySelector(".customer-name").innerText);}});// Attach event listener to the ticket container for event bubbling
